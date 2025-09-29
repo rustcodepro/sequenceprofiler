@@ -4,22 +4,10 @@ use std::collections::HashSet;
 use std::error::Error;
 use std::fs::File;
 use std::io::{BufRead, BufReader, Write};
+
 /*
-
- Author Gaurav Sablok
- SLB Potsdam
- Date: 2025-2-6
-
-  profiling the kmer on the sequences and then based on the
-  sequence kmers implementing a similarity ratio and that says
-
-  kmerratio = observer unique kmer /
-          number of the total unique kmer * 100
-
-  in this way selecting and disselecting those both for the hapmers
-  and also for the transformers.The sequences which will have a high similarity
-  means that they share already a similar sequence score, so building a suffix
- and de bruijns graph from the same would not be of much value.
+Author Gaurav Sablok,
+Email: codeprog@icloud.com
 */
 
 #[tokio::main]

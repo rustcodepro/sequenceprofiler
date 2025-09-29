@@ -20,9 +20,8 @@
 
 sequenceprofiler
    ************************************************
-       Gaurav Sablok, IBCH, PAN, Poznan, Poland,
-       https://portal.ichb.pl/laboratory-of-genomics/.
-       Email: gsablok@ibch.poznan.pl
+   Author Gaurav Sablok,
+   Email: codeprog@icloud.com
    ************************************************
 
 Usage: sequenceprofiler <COMMAND>
@@ -62,6 +61,4 @@ cargo xwin build --target x86_64-pc-windows-msvc
  ```
 
 Gaurav Sablok \
-Instytut Chemii Bioorganicznej Polskiej \
-Akademii Nauk ul. Noskowskiego 12/14 \
-| 61-704, Poznań Poland
+codeprog@icloud.com

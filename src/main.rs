@@ -16,10 +16,9 @@ use figlet_rs::FIGfont;
 use jellyfish::kmer_jellyfish;
 
 /*
-  Author Gaurav Sablok
-  SLB Potsdam
-  Date: 2025-2-6
-* */
+Author Gaurav Sablok,
+Email: codeprog@icloud.com
+*/
 
 fn main() {
     let standard_font = FIGfont::standard().unwrap();

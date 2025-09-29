@@ -6,13 +6,10 @@ use std::fs::File;
 use std::io::{BufRead, BufReader, Write};
 
 /*
- Author Gaurav Sablok
- SLB Potsdam
- Date 2025-2-22
-
- jellyfish counter for the illumina reads for the miseq, nextseq.it outputs the unique kmers as the all profiles kmers and the respective count for making the histograms for the profiled jellyfish counts.
-
+Author Gaurav Sablok,
+Email: codeprog@icloud.com
 */
+
 
 #[tokio::main]
 pub async fn kmer_jellyfish(path: &str, kmer: usize) -> Result<String, Box<dyn Error>> {

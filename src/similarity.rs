@@ -4,17 +4,10 @@ use std::collections::HashSet;
 use std::error::Error;
 use std::fs::File;
 use std::io::{BufRead, BufReader, Write};
+
 /*
-
- Author Gaurav Sablok
- SLB Potsdam
- Date: 2025-2-7
-
-  profiling the kmer on the sequences and then based on the
-  sequence kmers implementing a similarity ratio and that says
-
-  kmerratio = observer unique kmer /
-          number of the total unique kmer * 100
+Author Gaurav Sablok,
+Email: codeprog@icloud.com
 */
 
 #[tokio::main]

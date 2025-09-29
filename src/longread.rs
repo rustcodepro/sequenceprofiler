@@ -6,15 +6,8 @@ use std::fs::File;
 use std::io::{BufRead, BufReader, Write};
 
 /*
-Author Gaurav Sablok
-SLB Potsdam
-Date 2025-2-22
-
-A kmer origin finding faster than the recent implementation of the recent implementation
-Back to sequences: Find the origin of 𝑘-mers DOI: 10.21105/joss.07066.
-To make it faster, it first uses the kmer iterations
-to make the kmer and then it uses the  the uniques hashes to search across the given file.
-This outputs a table showing the sequence, kmer and the start and the end position.
+Author Gaurav Sablok,
+Email: codeprog@icloud.com
 */
 
 #[tokio::main]
