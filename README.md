@@ -41,24 +41,21 @@ Options:
  - to run the compiled library
 
  ```
-./target/debug/sequenceprofiler sequence
-     ./samplefile/sequence-sample-files/sample.fasta 4
-./target/debug/sequenceprofiler filter
-       ./samplefile/sequence-sample-files/sample.fasta 4 10
-./target/debug/sequenceprofiler origin-kmer
-           ./samplefile/longread-sample-files/fastafile.fasta 4
-./target/debug/sequenceprofiler jellyfish
-          ./samplefile/jellyfish-sample-files/test.fastq 4
+sequenceprofiler sequence ./samplefile/sequence-sample-files/sample.fasta 4 4
+sequenceprofiler filter ./samplefile/sequence-sample-files/sample.fasta 4 10 4
+sequenceprofiler origin-kmer ./samplefile/longread-sample-files/fastafile.fasta 4 4
+sequenceprofiler jellyfish ./samplefile/jellyfish-sample-files/test.fastq 4 4
 ```
 
- - To install windows version:
- ```
+- To install windows version:
+
+```
 rustup component add llvm-tools
 rustup target add x86_64-pc-windows-msvc
 git clone https://github.com/IBCHgenomic/ensemblcov.git
 cd ensemblcov
 cargo xwin build --target x86_64-pc-windows-msvc
- ```
+```
 
 Gaurav Sablok \
 codeprog@icloud.com

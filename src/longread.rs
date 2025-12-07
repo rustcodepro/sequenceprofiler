@@ -6,12 +6,11 @@ use std::fs::File;
 use std::io::{BufRead, BufReader, Write};
 
 /*
-Author Gaurav Sablok,
-Email: codeprog@icloud.com
+Gaurav Sablok,
+codeprog@icloud.com
 */
 
-#[tokio::main]
-pub async fn kmer_fasta(fastqfile: String, kmer: usize) -> Result<String, Box<dyn Error>> {
+pub fn kmer_fasta(fastqfile: String, kmer: usize) -> Result<String, Box<dyn Error>> {
     let f = File::open(fastqfile).expect("file not present");
     let read = BufReader::new(f);
     let mut header: Vec<String> = vec![];

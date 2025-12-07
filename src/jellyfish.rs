@@ -6,13 +6,11 @@ use std::fs::File;
 use std::io::{BufRead, BufReader, Write};
 
 /*
-Author Gaurav Sablok,
-Email: codeprog@icloud.com
+Gaurav Sablok,
+codeprog@icloud.com
 */
 
-
-#[tokio::main]
-pub async fn kmer_jellyfish(path: &str, kmer: usize) -> Result<String, Box<dyn Error>> {
+pub fn kmer_jellyfish(path: &str, kmer: usize) -> Result<String, Box<dyn Error>> {
     let f = File::open(path).expect("file not present");
     let read = BufReader::new(f);
     for i in read.lines() {

@@ -23,6 +23,8 @@ pub enum Commands {
         sequencepath: String,
         /// provide the kmer to be profiled for the sequence similarity
         sequencekmer: String,
+        /// threads for the analysis
+        thread: String,
     },
     /// identity kmer filter
     Filter {
@@ -32,6 +34,8 @@ pub enum Commands {
         kmer: String,
         /// provide the threshold
         threshold: String,
+        /// thread for the analysis
+        thread: String,
     },
     /// compare seq to other seq 1-1 iteration
     SequenceSeq {
@@ -39,6 +43,8 @@ pub enum Commands {
         sequencepath: String,
         /// provide the kmer to be profiled for the sequence similarity
         sequencekmer: String,
+        /// threads for the analysis
+        thread: String,
     },
     /// jellyfish counter for the long reads
     Jellyfish {
@@ -46,6 +52,8 @@ pub enum Commands {
         fastqfile: String,
         /// please provide the kmer to be searched for the origin
         kmer: usize,
+        /// threads for the analysis
+        thread: String,
     },
     /// finding the origin of kmers
     OriginKmer {
@@ -53,5 +61,7 @@ pub enum Commands {
         fastafile: String,
         /// please provide the kmer to be searched for the origin
         kmer: usize,
+        /// threads for the analysis
+        thread: String,
     },
 }
